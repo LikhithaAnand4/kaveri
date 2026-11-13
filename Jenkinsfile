@@ -15,15 +15,16 @@ pipeline{
       stage('Test'){
           steps{
              echo 'Executing automated tests'
-             bat 'python -m unittest app'
+             bat '"C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m unittest app'
              }
           }
-      stage('Run Application'){
-           steps{
-              bat 'python app.py'
-            }
-      }
+    stage('Run Application') {
+    steps {
+        echo 'Running Python application'
+        bat '"C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
+    }
 }
+
 post{
   success{
       echo 'CI Pipeline completed successfully'
