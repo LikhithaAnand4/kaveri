@@ -4,10 +4,10 @@ def add(a,b):
   return a + b
 
 def subtract(a,b):
-  retturn a - b
+  return a - b
 
 def multiply(a,b):
-  retturn a * b
+  return a * b
 
 #Automated test cases
 class TestCalculator(unittest.TestCase):
