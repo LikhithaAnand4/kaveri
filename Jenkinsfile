@@ -18,7 +18,7 @@ pipeline{
              bat 'python -m unittest app'
              }
           }
-      stage("Run Application'){
+      stage('Run Application'){
            steps{
               bat 'python app.py'
             }
